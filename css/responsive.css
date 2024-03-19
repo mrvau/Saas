@@ -25,11 +25,12 @@
         right: 0;
         background: #fff;
         width: 60%;
-        height: 100vh;
+        height: 550px;
         box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
         transform: scaleX(0);
         transform-origin: right;
         z-index: 9999;
+        border-radius: 10px;
     }
 
     .menu,
@@ -40,7 +41,7 @@
     .close_menu {
         position: absolute;
         top: 20px;
-        right: 10px;
+        right: 15px;
     }
 
     #open_menu {
@@ -49,6 +50,12 @@
 
     #open_menu:checked+.header_nav {
         transform: scaleX(1);
+    }
+
+    .sidebar_logo {
+        position: absolute;
+        width: 100%;
+        top: 0;
     }
 
     .header_nav .logo {
@@ -85,7 +92,7 @@
     .header_nav ul li {
         display: block;
         width: 100%;
-        padding: 25px 10px;
+        padding: 5px 10px;
         background: var(--btn_color);
         margin-bottom: 5px;
         border-radius: 10px;
@@ -107,46 +114,48 @@
     }
 
     .main_content {
-        width: 90%;
+        width: 100%;
         text-align: center;
         top: 30px;
     }
 
     .main_content h1 {
-        font-size: 28px;
-        margin-bottom: 20px;
+        font-size: 18px;
+        margin-bottom: 0;
     }
 
     .main_content p {
         width: 100%;
-        font-size: 16px;
-        margin: 30px auto;
+        font-size: 12px;
+        margin: 15px auto;
     }
 
     .main_btns {
-        width: 60%;
+        width: 85%;
     }
 
     .btn {
-        padding: 10px;
-        font-size: 12px;
+        padding: 8px;
+        font-size: 10px;
     }
 
     #brands {
         padding: 20px 0;
+        margin-top: 20px;
     }
 
     #brands .title {
-        font-size: 16px;
+        font-size: 10px;
     }
 
     .brand_collection {
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 0 10px;
         margin-top: 20px;
     }
 
     .brand img {
-        width: 80px;
+        width: 45px;
+        height: 20px;
     }
 }
