@@ -65,7 +65,7 @@ button {
     background: url(../img/Header\ B.png);
     background-repeat: repeat-x;
     background-position: top center;
-    height: 100vh;
+    height: 800px;
 }
 
 .main_header {
@@ -415,4 +415,39 @@ button {
     top: 40px;
     left: 37px;
     z-index: -1;
+}
+
+/* Brand Logo Area */
+
+#brands {
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 100px;
+}
+
+#brands .title {
+    font-family: var(--font_regular);
+    font-size: 22px;
+}
+
+.brand_collection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.brand {
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.brand:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.brand img {
+    background: transparent;
 }

@@ -5,6 +5,7 @@
 
     #head {
         padding: 10px;
+        height: 200px;
     }
 
     .main_header {
@@ -97,5 +98,55 @@
 
     .header_nav ul li a i {
         display: none;
+    }
+
+    .top_illustration,
+    .left_illustration,
+    .right_illustration {
+        display: none;
+    }
+
+    .main_content {
+        width: 90%;
+        text-align: center;
+        top: 30px;
+    }
+
+    .main_content h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .main_content p {
+        width: 100%;
+        font-size: 16px;
+        margin: 30px auto;
+    }
+
+    .main_btns {
+        width: 60%;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    #brands {
+        padding: 20px 0;
+    }
+
+    #brands .title {
+        font-size: 16px;
+    }
+
+    .brand_collection {
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .brand img {
+        width: 80px;
     }
 }
