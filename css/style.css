@@ -59,6 +59,10 @@ button {
     font-weight: 900;
 }
 
+.text_center {
+    text-align: center;
+}
+
 /* Head Section */
 
 #head {
@@ -450,4 +454,93 @@ button {
 
 .brand img {
     background: transparent;
+}
+
+/* Why Financy Area */
+
+.section_head {
+    width: 45%;
+    margin: 0 auto 70px;
+}
+
+.section_head span {
+    display: inline-block;
+    font-family: var(--font_bold);
+    font-size: 18px;
+    color: var(--title_color);
+    margin-bottom: 20px;
+}
+
+.section_head h2 {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 60px;
+}
+
+.financy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.financy_card {
+    width: 21%;
+    height: 241px;
+    position: relative;
+}
+
+.card_icon {
+    position: absolute;
+    top: -40px;
+    left: 30px;
+    width: 76px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 100%, 0% 100%);
+    z-index: 1;
+}
+
+.financy_card:first-child .card_icon {
+    background: #E2E1FF;
+}
+
+.financy_card:nth-child(2) .card_icon {
+    background: #FFEDE8;
+}
+
+.financy_card:last-child .card_icon {
+    background: #D3FCFF;
+}
+
+.card_meta {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 365px;
+    height: 241px;
+    padding: 60px 30px 30px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 85% 100%, 0% 100%);
+    background: #fff;
+}
+
+.polygon {
+    position: absolute;
+    width: 369px;
+    height: 245px;
+    background: #E9E9E9;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 85% 100%, 0% 100%);
+    z-index: -1;
+}
+
+.card_meta h3 {
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card_meta p {
+    font-size: 18px;
 }
