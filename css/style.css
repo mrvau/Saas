@@ -33,7 +33,7 @@ body {
 }
 
 section {
-    padding: 30px 0;
+    padding: 70px 0;
 }
 
 ul {
@@ -63,6 +63,26 @@ button {
     text-align: center;
 }
 
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+}
+
+.circle_1_4 {
+    width: 101px;
+    height: 101px;
+    border-top-right-radius: 100%;
+    background: #FF7F5C;
+}
+
+.circle_3_4 {
+    width: 41px;
+    height: 41px;
+    border-bottom-left-radius: 100%;
+    background: #E8F2FF;
+}
+
 /* Head Section */
 
 #head {
@@ -70,6 +90,7 @@ button {
     background-repeat: repeat-x;
     background-position: top center;
     height: 800px;
+    padding-top: 30px;
 }
 
 .main_header {
@@ -463,7 +484,7 @@ button {
     margin: 0 auto 70px;
 }
 
-.section_head span {
+.section_head>span {
     display: inline-block;
     font-family: var(--font_bold);
     font-size: 18px;
@@ -543,4 +564,247 @@ button {
 
 .card_meta p {
     font-size: 18px;
+}
+
+/* Why Choose Us Area */
+
+#why_choose_us .flex {
+    flex-direction: row-reverse;
+}
+
+#why_choose_us .section_head {
+    width: 500px;
+    margin: 0;
+}
+
+#why_choose_us .section_head h2,
+#why_choose_us_2 .section_head h2 {
+    margin-bottom: 30px;
+}
+
+#why_choose_us .section_head>p,
+#why_choose_us_2 .section_head>p {
+    font-size: 18px;
+    color: var(--paragraph_color);
+    padding-bottom: 23px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+#why_choose_us_2 .section_head>p {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+#why_choose_us .section_head ul {
+    color: #505887;
+    font-size: 19px;
+    line-height: 30px;
+}
+
+#why_choose_us .section_head ul li {
+    margin-bottom: 10px;
+}
+
+#why_choose_us .section_head ul li i {
+    color: #FDBC64;
+    margin-right: 5px;
+}
+
+.wcu_img_1 {
+    display: none;
+}
+
+.wcu_img {
+    position: relative;
+    width: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 39px 86px 23px 18px;
+}
+
+.shadow {
+    width: 400px;
+    height: 300px;
+    filter: drop-shadow(0px 0px 70px rgba(0, 0, 0, 0.1));
+}
+
+.mini_stat {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.mini_stat .shadow {
+    width: 220px;
+    height: 115px;
+}
+
+.shadow .polygon {
+    width: 100%;
+    height: 100%;
+}
+
+.user_statics_1 {
+    width: 100%;
+    height: 100%;
+    padding: 25px 20px;
+    background: #fff;
+}
+
+.user_statics_1 h4 {
+    margin-bottom: 30px;
+}
+
+.user_statics_1 span {
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.wcu_users {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.wcu_user_card {
+    width: 56px;
+    height: 86px;
+    text-align: center;
+}
+
+.user_statics_1 .wcu_user_card span {
+    font-size: 12px;
+}
+
+.user_statics_2 {
+    background: #fff;
+    padding: 10px 15px;
+}
+
+.user_statics_2 span {
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.amount h6 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.amount span {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 900;
+    margin-bottom: 0;
+    color: #FDBC64;
+}
+
+.mini_stat .shadow:last-child .user_statics_2 .amount span {
+    color: var(--title_color);
+}
+
+.wcu_img img[alt="BG Pattern"] {
+    position: absolute;
+    top: -45px;
+    left: 55px;
+}
+
+.wcu_img img[alt="Spring Left"] {
+    position: absolute;
+    top: 150px;
+    left: 65px;
+}
+
+.wcu_img img[alt="Spring Right"] {
+    position: absolute;
+    top: 275px;
+    right: 0;
+}
+
+.wcu_img .circle_1_4 {
+    position: absolute;
+    top: -10px;
+    right: 40px;
+    z-index: -1;
+}
+
+.wcu_img .circle_3_4 {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    z-index: -1;
+}
+
+/* Why Choose Us 2 */
+
+#why_choose_us_2 .section_head {
+    width: 35%;
+    margin: 0;
+}
+
+#why_choose_us_2 .flex {
+    gap: 0;
+}
+
+.single_icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.single_special_item:first-child .single_icon {
+    background: var(--secondary_btn_color);
+}
+
+.single_special_item:nth-child(2) .single_icon {
+    background: var(--title_color);
+}
+
+.single_special_item:last-child .single_icon {
+    background: #00E1F0;
+}
+
+.single_special_item {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 30px;
+}
+
+.single_special_item:last-child {
+    margin-bottom: 0;
+}
+
+.special_meta {
+    width: 65%;
+}
+
+.special_meta span {
+    display: inline-block;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.special_meta p {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--paragraph_color);
 }

@@ -222,4 +222,91 @@
     .card_meta p {
         font-size: 12px;
     }
+
+    #why_choose_us {
+        padding: 30px 15px;
+    }
+
+    #why_choose_us .section_head,
+    #why_choose_us_2 .section_head {
+        text-align: center;
+        width: 100%;
+    }
+
+    #why_choose_us .flex,
+    #why_choose_us_2 .flex {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #why_choose_us .section_head h2,
+    #why_choose_us_2 .section_head h2 {
+        line-height: 28px;
+        margin-bottom: 5px;
+    }
+
+    #why_choose_us .section_head p,
+    #why_choose_us_2 .section_head p {
+        font-size: 12px;
+        padding-bottom: 14px;
+        margin-bottom: 14px;
+    }
+
+    #why_choose_us .section_head ul {
+        text-align: left;
+        font-size: 13px;
+    }
+
+    .wcu_img {
+        display: none;
+    }
+
+    .wcu_img_1 {
+        display: block;
+        width: 100%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-58%);
+    }
+
+    .wcu_img_1 img {
+        width: 100%;
+    }
+
+    #why_choose_us_2 {
+        padding: 0px 15px 30px;
+    }
+
+    .single_special_item {
+        width: 100%;
+        text-align: left;
+        gap: 15px;
+        margin-bottom: 0px;
+    }
+
+    .single_icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .single_icon img {
+        width: 65%;
+        height: 65%;
+    }
+
+    .special_meta {
+        width: 80%;
+    }
+
+    .wcu_img_2 {
+        width: 100%;
+        position: relative;
+        top: 25px;
+        left: 50%;
+        transform: translateX(-58%);
+    }
+
+    .wcu_img_2 img {
+        width: 100%;
+    }
 }
