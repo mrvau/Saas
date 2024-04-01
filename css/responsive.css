@@ -1,6 +1,11 @@
 @media screen and (max-width: 520px) {
     body {
+        max-width: 100%;
         overflow-x: hidden;
+    }
+
+    p {
+        font-size: 12px;
     }
 
     #head {
@@ -175,6 +180,7 @@
 
     .section_head h2 {
         font-size: 16px;
+        line-height: 20px;
     }
 
     .financy {
@@ -223,12 +229,15 @@
         font-size: 12px;
     }
 
-    #why_choose_us {
+    #why_choose_us,
+    #features {
         padding: 30px 15px;
     }
 
     #why_choose_us .section_head,
-    #why_choose_us_2 .section_head {
+    #why_choose_us_2 .section_head,
+    #features .section_head,
+    .features_wrapper .section_head {
         text-align: center;
         width: 100%;
     }
@@ -240,16 +249,20 @@
     }
 
     #why_choose_us .section_head h2,
-    #why_choose_us_2 .section_head h2 {
+    #why_choose_us_2 .section_head h2,
+    #features .section_head h2 {
         line-height: 28px;
         margin-bottom: 5px;
     }
 
     #why_choose_us .section_head p,
-    #why_choose_us_2 .section_head p {
+    #why_choose_us_2 .section_head p,
+    #features .section_head p,
+    .features_wrapper .section_head p {
         font-size: 12px;
         padding-bottom: 14px;
         margin-bottom: 14px;
+        width: 100%;
     }
 
     #why_choose_us .section_head ul {
@@ -303,10 +316,186 @@
         position: relative;
         top: 25px;
         left: 50%;
+        height: 235px;
         transform: translateX(-58%);
     }
 
     .wcu_img_2 img {
         width: 100%;
+    }
+
+    #features .section_head {
+        margin-bottom: 0;
+    }
+
+    #features .section_head p {
+        width: 100%;
+    }
+
+    .feature_cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #features .feature_cards .polygon {
+        width: 102%;
+        height: 320px;
+        text-align: center;
+    }
+
+    #features .feature_cards .polygon:nth-child(3),
+    #features .feature_cards .polygon:last-child {
+        height: 140px;
+    }
+
+    .feature_cards .polygon .card_meta {
+        top: 1px;
+        height: 99%;
+    }
+
+    .feature_cards .polygon .card_meta h4 {
+        font-size: 18px;
+    }
+
+    .feature_cards .polygon .card_meta p {
+        font-size: 12px;
+    }
+
+    .features_wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .features_wrapper .section_head h2 {
+        margin-bottom: 10px;
+    }
+
+    .features_wrapper .section_head p {
+        margin-bottom: 10px;
+        padding-bottom: 0;
+    }
+
+    .features_img {
+        flex: 300px;
+    }
+
+    #form {
+        position: static;
+        height: auto;
+        text-align: center;
+    }
+
+    #form .circle_1_4 {
+        position: inherit;
+        display: none;
+    }
+
+    .form_wrapper {
+        position: inherit;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .cta_form {
+        position: inherit;
+        width: 100%;
+        height: 450px;
+        text-align: left;
+    }
+
+    #form h2 {
+        position: inherit;
+        width: auto;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    #form img[alt="vector 1"],
+    #form img[alt="vector 2"],
+    #form img[alt="Line"] {
+        position: inherit;
+        display: none;
+    }
+
+    .cta_btns {
+        width: 56%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #cta .section_head>p {
+        font-size: 16px;
+    }
+
+    #footer {
+        padding: 0 10px;
+    }
+
+    .footer_items {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .footer_meta {
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .footer_logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer_info {
+        font-size: 16px;
+    }
+
+    .socials {
+        margin: 0 auto;
+    }
+
+    .imp_links {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .imp_links ul li span {
+        font-size: 14px;
+    }
+
+    .imp_links ul li a {
+        font-size: 12px;
+    }
+
+    .footer_cta {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer_cta input {
+        width: 60%;
+    }
+
+    .footer_cta p {
+        font-size: 14px;
+    }
+
+    .social_links {
+        width: 100%;
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .copyright {
+        width: 100%;
+        font-size: 12px;
+        gap: 20px;
+    }
+
+    .copyright span:not(.copy2022) {
+        display: none;
     }
 }
